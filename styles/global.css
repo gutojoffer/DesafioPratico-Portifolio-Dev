@@ -29,11 +29,20 @@
   --title-md-tertiary: 400 16px/140% var(--font-tertiary);
   --title-sm-tertiary: 400 14px/140% var(--font-tertiary);
   --text: 400 16px/140% var(--font-tertiary);
-  
+
+  --filter-html: invert(24%) sepia(96%) saturate(7490%) hue-rotate(0deg) brightness(91%) contrast(85%);
+  --filter-css: brightness(0) saturate(100%) invert(60%) sepia(20%) saturate(5986%) hue-rotate(180deg) brightness(92%) contrast(85%);
+  --filter-js: brightness(0) saturate(100%) invert(86%) sepia(82%) saturate(6283%) hue-rotate(314deg) brightness(101%) contrast(84%);
+  --filter-react: brightness(0) saturate(100%) invert(56%) sepia(90%) saturate(2123%) hue-rotate(180deg) brightness(91%) contrast(87%);
+  --filter-node: brightness(0) saturate(100%) invert(68%) sepia(7%) saturate(3608%) hue-rotate(49deg) brightness(110%) contrast(60%);
 }
+  
 
 body {
   background-color: var(--gray-100);
   color: var(--gray-500);
   font-family: var(--text);
+  min-height: 100vh;
+
 }
+

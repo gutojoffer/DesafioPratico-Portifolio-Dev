@@ -1,50 +1,121 @@
-.header-container{
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  text-align: center;
-  color: var(--gray-500);
-  background-image: url(../assets/image/Background_Intro.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
-  height: 750px;
-  width: 1366px;
+/* Header principal */
+header {
+  width: 100vw; /* Ocupa toda a largura da viewport */
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  background-color: var(--gray-900); /* Cor de fundo */
+  background-image: url(../assets/image/Background_Intro.png); /* Background correto aqui */
+  background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço */
+  background-position: center; /* Centraliza o fundo */
+  background-repeat: no-repeat; /* Impede repetição do fundo */
+  display: flex; /* Alinha o conteúdo */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: flex-start; /* Alinha o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
 
-.profile-pic {
+/* Container do header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--gray-500);
+  padding: 2rem;
+  max-width: 1366px; /* Define um limite para o conteúdo */
+  width: 100%; /* O container ocupa toda a largura */
+}
+
+/* Imagem do perfil */
+.profile-pic img {
   width: 112px;
   height: 112px;
 }
 
-.name-profile{
+/* Nome no perfil */
+.name-profile {
   color: var(--red);
 }
 
-.intro {
-  > h1 {
-    font: var(--title-lg-primary);
-    color: var(--gray-600);
-    margin-top: 0.5rem;
-  }
-
-  > span {
-    font: var(--subtitle);
-  }
-
-  > p {
-    font: var(--text);
-    text-align: center;
-    max-width: 800px;
-    margin-top: 20px;
-  }
+/* Introdução */
+.intro h1 {
+  font: var(--title-lg-primary);
+  color: var(--gray-600);
+  margin-top: 0.5rem;
 }
 
+.intro span {
+  font: var(--subtitle);
+}
+
+.intro p {
+  font: var(--text);
+  text-align: center;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+/* Tags */
 .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
+  display: flex; /* Organiza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens no container */
+  gap: 20px; /* Espaço entre os itens */
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  margin-top: 80px;
 }
+
+figure {
+  display: flex; /* Alinha imagem e texto horizontalmente */
+  align-items: center; /* Centraliza no eixo vertical */
+  gap: 10px; /* Espaço entre a imagem e o texto */
+  margin: 0; /* Remove margens padrão */
+  text-align: center;
+  padding: 10px 20px; /* Espaçamento interno */
+  background-color: var(--gray-300);
+  border-radius: 25px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+figure img {
+  width: 30px; /* Define o tamanho fixo dos ícones */
+  height: auto; /* Mantém a proporção */
+}
+
+figcaption span {
+  font: var(--title-md-tertiary);
+  color: var(--gray-500);
+  margin-top: 5px;
+}
+
+/* Aplicação de filtros para figuras */
+figure:nth-child(2) img {
+  filter: var(--filter-html);
+}
+
+figure:nth-child(3) img {
+  filter: var(--filter-css);
+}
+
+figure:nth-child(4) img {
+  filter: var(--filter-js);
+}
+
+figure:nth-child(5) img {
+  filter: var(--filter-react);
+}
+
+figure:nth-child(6) img {
+  filter: var(--filter-node);
+}
+
+/* Setas de rolagem */
+.scroll-down {
+  margin-top: auto; /* Empurra para o final do container */
+  padding-block: 2rem;
+}
+
+.scroll-down img {
+  width: 32px;
+  height: 32px;
+
+}
+
