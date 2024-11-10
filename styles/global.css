@@ -19,9 +19,9 @@
   --gray-500: #C0C4CE;
   --gray-600: #E2E4E9;
 
-  --font-primary: "Asap", sans-serif;
-  --font-secundary: "Inconsolata", sans-serif;
-  --font-tertiary: "Maven Pro", sans-serif;
+  --font-primary: 'Asap', sans-serif;
+  --font-secundary: 'Inconsolata', sans-serif;
+  --font-tertiary: 'Maven Pro', sans-serif;
   --title-lg-primary: 600 56px/120% var(--font-primary);
   --title-md-primary: 600 24px/120% var(--font-primary);
   --title-sm-primary: 600 16px/120% var(--font-primary);
