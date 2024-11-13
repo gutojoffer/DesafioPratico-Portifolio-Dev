@@ -1,0 +1,67 @@
+footer {
+  background-image: url(../assets/image/Background_Contacts.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 72px 120px 144px 120px;
+}
+
+.contacts p {
+  font: var(--text);
+  color: var(--gray-500);
+  margin-top: 0.5rem;
+}
+
+.social-media-cards {
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center; /* Centraliza os itens verticalmente */
+  gap: 16px; /* Espaçamento entre as colunas */
+  padding: 16px 24px; /* Espaçamento interno */
+}
+
+.card-social-media {
+  display: flex; /* Alinha os itens horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between; /* Espaça o conteúdo e a seta */
+  background-color: var(--gray-300); /* Cor de fundo */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 16px 24px; /* Espaçamento interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animações para hover */
+}
+
+.card-social-media img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+.card-link {
+  display: flex; /* Garante que o ícone da seta esteja centralizado */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.card-social-media span {
+  font: var(--text); /* Fonte */
+  color: var(--gray-700); /* Cor do texto */
+}
+
+.card-link img {
+  width: 16px; /* Define o tamanho da seta */
+  height: 16px;
+}
+
+.card-content {
+  display: flex; /* Alinha o ícone e texto lado a lado */
+  align-items: center; /* Centraliza o ícone e texto verticalmente */
+  gap: 12px; /* Espaço entre o ícone e o texto */
+}

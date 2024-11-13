@@ -75,3 +75,11 @@ main {
   margin-top: 0.5rem;
   justify-content: center; 
 }
+
+.highlight-purple  {
+  display: flex;
+  font: var(--subtitle);
+  color: var(--purple);
+  justify-content: center;
+  
+} 
