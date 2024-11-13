@@ -1,15 +1,33 @@
 
 /* Definindo o grid da seção de projects-grid */
 .projects-grid{
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px; /* Espaçamento entre os cartões */
   padding: 24px; /* Espaçamento interno do container */
+  margin: 120px;
 }
 
 .card {
   background-color: var(--gray-300);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
   text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Arredonda as bordas da imagem */
+  margin-bottom: 16px; /* Espaço entre a imagem e o texto */
+}
+
+.card h3 {
+  font: var(--title-sm-primary); /* fonte do título */
+  margin-bottom: 18px; /* Espaçamento entre título e descrição */
+}
+
+.card p {
+  font: var(--text); /* fonte da descrição */
+  margin-bottom: 16px; /* margem do final */
 }
