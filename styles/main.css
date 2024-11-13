@@ -31,3 +31,56 @@
   font: var(--text); /* fonte da descrição */
   margin-bottom: 16px; /* margem do final */
 }
+
+.services{
+  margin: 88px 120px 120px 120px;
+}
+
+.services-grid {
+  grid-template-columns: repeat(1, fr);
+  grid-auto-flow: column;
+  background-color: var(--gray-100);
+  justify-content: center;
+  gap: 24px;
+}
+
+.card-services {
+  background-color: var(--gray-200);
+  border-radius: 12px;
+  border: 1px solid var(--gray-800);
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+  text-align: left;
+  min-width: 280px; /* Tamanho mínimo */
+  min-height: 155px; /* Altura mínima */
+  padding: 20px; /* Aumenta o espaço interno */
+}
+
+.card-services img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px; /* Arredonda as bordas da imagem */
+  margin-bottom: 16px; /* Espaço entre a imagem e o texto */
+}
+
+.card-services h3 {
+  font: var(--title-sm-primary); /* fonte do título */
+  margin-bottom: 18px; /* Espaçamento entre título e descrição */
+}
+
+.card-services p {
+  font: var(--text); /* fonte da descrição */
+  margin-bottom: 16px; /* margem do final */
+}
+
+div:nth-child(1) img {
+  filter: var(--filter-computer);
+}
+
+div:nth-child(2) img {
+  filter: var(--filter-db);
+}
+
+div:nth-child(3) img {
+  filter: var(--filter-Devops);
+}

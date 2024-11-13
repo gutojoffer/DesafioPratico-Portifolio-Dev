@@ -35,6 +35,9 @@
   --filter-js: brightness(0) saturate(100%) invert(86%) sepia(82%) saturate(6283%) hue-rotate(314deg) brightness(101%) contrast(84%);
   --filter-react: brightness(0) saturate(100%) invert(56%) sepia(90%) saturate(2123%) hue-rotate(180deg) brightness(91%) contrast(87%);
   --filter-node: brightness(0) saturate(100%) invert(68%) sepia(7%) saturate(3608%) hue-rotate(49deg) brightness(110%) contrast(60%);
+  --filter-computer: brightness(0) saturate(100%) invert(47%) sepia(48%) saturate(641%) hue-rotate(233deg) brightness(106%) contrast(88%);
+  --filter-db: brightness(0) saturate(100%) invert(87%) sepia(74%) saturate(5286%) hue-rotate(313deg) brightness(98%) contrast(87%);
+  --filter-Devops: brightness(0) saturate(100%) invert(73%) sepia(4%) saturate(6484%) hue-rotate(49deg) brightness(105%) contrast(59%);
 }
   
 
@@ -53,8 +56,8 @@ main {
   justify-content: flex-start;
   width: 100vw;
   height: 100vh;
-  overflow-y: auto;
   padding: 72px 120px 144px 120px;
+  background-color: var(--gray-200);
 }
 
 .highlight  {
