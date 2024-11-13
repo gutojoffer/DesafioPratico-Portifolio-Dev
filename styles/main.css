@@ -1,0 +1,15 @@
+
+/* Definindo o grid da seção de projects-grid */
+.projects-grid{
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 24px; /* Espaçamento entre os cartões */
+  padding: 24px; /* Espaçamento interno do container */
+}
+
+.card {
+  background-color: var(--gray-300);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
